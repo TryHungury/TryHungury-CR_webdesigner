@@ -1,0 +1,591 @@
+/* Плавний скрол */
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Надання дефолтних кольорів */
+:root {
+    --main-color: rgb(40, 37, 32);
+    --text-color: rgb(132, 132, 132);
+}
+
+/* Добавлення стилю тексту */
+@font-face {
+    font-family: "Circular Std";
+    src: url(../fonts/circular-std.ttf);
+}
+
+/* Добавлення стилю Заголовкам */
+h1, h2, h3{
+    font-family: "Circular Std";
+}
+h4, h5 ,h6 {
+    font-family: "Roboto";
+}
+
+/* Дані контейнерів */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Стиль замовлення пісень */
+.order-call{
+    background-image: url(../img/index/order-call/fon-order.jpg);
+    background-position: 60%;
+    background-size: cover;
+    position: static;
+}
+
+.order-call-block{
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 50px;
+    
+}
+
+.order-call-form{
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+	text-align: center;
+    margin-top: 20%;
+}
+
+.order-call-form > form{
+    margin: 15px;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 1fr ;
+    justify-items: center;
+}
+
+.order-call-form > h3{
+    margin: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.order-call-form > p{
+    margin: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.order-input{
+    width: 90%;
+    margin-top: 12px;
+    padding: 16px 24px;
+    border-radius: 28px;
+    background-color: rgba(40, 37, 32, 0.12);
+    border: 1px solid rgba(40, 37, 32, 0.12);
+    font-family:"Roboto";
+}
+
+.order-button {
+    width: 100%;
+    margin: 0px 7px;
+    background-color: #f98250;
+    border-radius:28px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:"Roboto";
+    font-size:15px;
+    padding:16px 24px;
+    text-decoration:none;
+    font-weight: bold;
+   }
+
+.order-button:hover {
+    transition: 1s;
+	background-color: #599673;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .order-call-block{
+        min-height: 600px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+   .order-call-form{
+        margin-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 470px;
+   }
+}
+
+/* Стиль гастролів */
+.adventure-starts{
+    background-image: url(../img/index/adventure-starts/fon-adventure.webp);
+    background-size: cover;
+    background-position: 11%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.adventure-text{
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.adventure-text > h2{
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.adventure-text > p{
+    font-size: 19px;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.adventure-photos{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.adventure-divphotos{
+    padding: 5px;
+}
+
+.adventure-divphotos > img {
+    width: 240px;
+    height: 150px;
+    border-radius: 5%;
+}
+.adventure_data {
+    font-weight: bolder;
+    background-color: #fc76e5;
+}
+.adventure_paragraph{
+    background-color: #21a8c7;
+}
+
+.adventure-divphotos > h3{
+    padding: 20px;
+    font-size: 22px;
+    color: var(--main-color);
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .adventure-photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .adventure-divphotos > img{
+        width: 300px;
+        height: 190px;
+    }
+    .adventure-divphotos > h3{
+        font-size: 23px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .adventure-photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .adventure-divphotos > img{
+        width: 245px;
+        height: 160px;
+    }
+    .adventure-divphotos > h3{
+        font-size: 25px;
+    }
+    .adventure-text > h2{
+        font-size: 44px;
+        font-weight: bold;
+        color: var(--main-color);
+    }
+
+}
+
+/* Стиль замовлення білетів */
+.cabin-rentals{
+    background-image: url(../img/index/cabin-rentals/fon-cabin.webp);
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cabin-title > h2{
+    background-image: url(../img/index/cabin-rentals/fon-cabin.webp);
+    font-size: 34px;
+    color: rgb(99, 0, 83);
+    margin: 30px 15px;
+    text-align: center;
+}
+.cabin-title > p{
+    background-image: url(../img/index/cabin-rentals/fon-cabin.webp);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin: 30px 15px;
+    text-align: center;
+}
+
+.cabin-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.cabin-cards-blocks{
+    margin: 30px 25px;
+    padding: 43px 29px;
+    border-radius: 10px;
+    text-align: center;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cabin-cards-blocks > h2{
+    font-size: 34px;
+    color: white; 
+    font-weight: 500;
+}
+.cabin-cards-blocks > h4{
+    font-size: 22px;
+    color: white; 
+}
+
+.cabin-cards-blocks > p{
+    color: var(--text-color);
+    margin-top: -20px;
+}
+
+.cabin-cards-text{
+    display: grid;
+    grid-template-rows: 3fr, 3fr, 3fr;
+}
+
+.card-australia{
+    background: linear-gradient( rgba(35, 34, 33, 0.8), rgba(35, 34, 33, 0.8) ), url(../img/index/cabin-rentals/Australia.webp);
+    background-size: cover;
+}
+.card-canada{
+    background: linear-gradient( rgba(35, 34, 33, 0.8), rgba(35, 34, 33, 0.8) ), url(../img/index/cabin-rentals/Canada.webp);
+    background-size: cover;
+}
+.card-finlandia{
+    background: linear-gradient( rgba(35, 34, 33, 0.8), rgba(35, 34, 33, 0.8) ), url(../img/index/cabin-rentals/Finlandia.webp);
+    background-size: cover;
+}
+.card-austria{
+    background: linear-gradient( rgba(35, 34, 33, 0.8), rgba(35, 34, 33, 0.8) ), url(../img/index/cabin-rentals/Austria.webp);
+    background-size: cover;
+}
+
+.cabin-bottom{
+    background-image: url(../img/index/cabin-rentals/fon-cabin.webp);
+   text-align: center;
+   margin: 10px auto;
+}
+.cabin-button{
+    margin: 7px auto;
+	background-color:#f98250;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Roboto";
+	font-size:15px;
+	padding:16px 31px;
+	text-decoration:none;
+    font-weight: bold;
+    max-width: 130px;
+    
+}
+.cabin-button:hover {
+    transition: 1s;
+    background-color:#ffffff;
+    color: #000;
+}
+.cabin-button:active {
+	position:relative;
+	top:1px;
+}
+
+@media (min-width: 768px){
+    .cabin-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Стиль Програм для бітів  */
+.things-to-do{
+    background-image: url(../img/index/things-to-do/fon-things.webp);
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.things-title > h2{
+    font-size: 34px;
+    text-align: center;
+}
+
+.things-block{
+    display: grid;
+    margin: 30px auto;
+}
+
+.things-card-blocks{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.things-card-blocks > img{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: -10px;
+}
+
+.things-card-blocks > h2{
+    padding: 5px;
+    font-weight: 500;
+}
+
+.things-card-blocks > h3{
+    padding: 5px;
+    color: #f98250;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.things-card-blocks > p{
+    padding: 5px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+@media (min-width: 768px) {
+    .things-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .things-block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+/* Отримати повні відповіді */
+
+.get-full-answer {
+    padding: 145px 0;
+    background-image:url(../img/index/get-full-answer/get-full-answer-background.webp);
+    /*background-repeat: no-repeat;
+    background-position: center;*/
+    background-size: cover;
+
+}
+.get-full-answer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (min-width: 500px) {
+    .get-full-answer div {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    }   
+}
+
+.get-full-answer p {
+    font-family: "Circular Std";
+    font-size: 60px;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+.orange-button {
+    margin: 7px;
+	background-color:#685046;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Roboto";
+	font-size:15px;
+	padding:16px 31px;
+	text-decoration:none;
+    font-weight: bold;
+}
+
+.orange-button:hover {
+    transition: 1s;
+    background-color:#ffffff;
+    color: #000;
+}
+
+.orange-button:active {
+    position:relative;
+    top:1px;
+}
+
+.transparent-button {
+    margin: 7px;
+    background-color:transparent;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"Roboto";
+	font-size:15px;
+	padding:16px 31px;
+	text-decoration:none;
+    font-weight: bold;
+}
+
+.transparent-button:hover {
+    transition: 1s;
+	background-color:#ffffff;
+    color: #000;
+}
+
+.transparent-button:active {
+	position:relative;
+	top:1px;
+}
+/* Мої об'єкти */
+.our-facilities {
+    background-image: url(../img/index/our-facilities/our-facilities-background.webp);
+    background-size: cover;
+}
+
+.our-facilities p {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Circular Std";
+    text-align: center;
+    color: black;
+    padding: 20px; 
+}
+
+.our-facilities div {
+    margin: 5px;
+    padding: 10px;
+}
+
+.our-facilities img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .our-facilities img {
+        max-width: 40%;
+        max-height: 100%;
+        border-radius: 10px;
+    }
+}
+/* Резервація */
+.reservation {
+    background-image: url(../img/index/reservation/reservation-background.webp);
+
+    display: grid;
+    justify-items: center;
+    padding: 75px 0 75px 0;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.reservation div {
+    padding: 60px;
+    background-color: white;
+    border-radius: 15px;
+    /* margin: 10px 100px 10px 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.reservation h2 {
+   font-size: 34px;
+    
+}
+
+.reservation h4 {
+   font-size: 19px;
+   color: #848484;
+} 
+
+.reservation-input {
+    margin-top: 12px;
+    padding: 16px 24px;
+    border-radius: 28px;
+    background-color: rgba(40, 37, 32, 0.12);
+    border: 1px solid rgba(40, 37, 32, 0.12);
+    font-family: "Roboto";
+}
+
+.reservation select {
+    width: 99%;
+    margin-top: 12px;
+    padding: 16px 24px;
+    border-radius: 28px;
+    background-color: rgba(40, 37, 32, 0.12);
+    border: 1px solid rgba(40, 37, 32, 0.12);
+    font-family: "Roboto";
+}
+
+.make-a-button {
+    margin-top: 12px;
+    background-color: #f98250;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 16px 31px;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: rgba(40, 37, 32, 0.12) ;
+}
+
+.make-a-button:hover {
+    transition: 1s;
+    background-color:#88b299;
+    color: white;
+}
+
+.make-a-button:active {
+    position:relative;
+    top:1px;
+}

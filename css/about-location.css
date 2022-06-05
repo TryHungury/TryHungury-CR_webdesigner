@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url(../fonts/circular-std.ttf);
+}
+
+/* Секція про мої пісні */
+.about-song {
+    background-image: url(../img/about-location/section-about-song/bg.jpg);
+    padding: 80px 0;
+}
+
+.about-song-box {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+}
+
+.about-song-content {
+    max-width: 55%;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-song-text {
+    text-align: center;
+}
+
+.about-song-text h2 {
+    font-weight: 500;
+    font-size: 34px;
+    font-family: "Circular Std", serif;
+    line-height: 40px;
+}
+
+.about-song-text p {
+    font-weight: 400;
+    margin-top: 45px;
+}
+
+.about-song-video {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0 0 0;
+    max-height: 500px;
+}
+
+.about-song-video {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.empty-column {
+    display: none;
+}
+
+/* Цекція детальніше */
+
+.services {
+    padding: 90px 24px;
+    background-image: url(../img/about-location/section-services/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.services-text-preview {
+    margin-top: 30px;
+}
+
+.services-text-preview p {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    line-height: 10px;
+    
+}
+
+.services-card-box {
+    margin-top: 45px;
+}
+
+.card {
+    border: 0;
+    background-color: #fff0;
+    max-width: 500px;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.card-body h5 {
+    font-weight: 500;
+    font-size: 22px;
+    font-family: "Circular Std", serif;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+
+.card-body p {
+    color: white;
+    line-height: 25.6px;
+    text-align: center;
+}
+
+/* Секція мої найкращі творіння */
+
+.creativity-activities {
+    background-image: url(../img/about-location/section-season_activities/bg-dark.jpg);
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creativity-activities-header p {
+    font-family: "Circular Std", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.7px;
+}
+
+.creativity-activities-boxes {
+    margin-top: 50px;
+    padding: 0 15px;
+    max-width: 1500px;
+}
+
+.creativity-activities-box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.creativity-activities-img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.creativity-activities-p-name {
+    font-family: "Circular Std", serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.creativity-activities-p-text {
+    line-height: 25.6px;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+.creativity-activities-list {
+    margin-top: 20px;
+}
+
+
+.creativity-activities-list div {
+    display: flex;
+    flex-direction: row;
+    line-height: 25.6px;
+    margin-bottom: 16px;
+    margin-right: 15px;
+}
+
+.creativity-activities-list img {
+    width: 25px;
+    height: 25px;
+}
+
+.creativity-activities-spa {
+    padding: 80px 0 0 0;
+    max-width: 1500px;
+}
+
+.creativity-activities-spa div {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.creativity-activities-spa h2 {
+    text-align: center;
+    font-family: "Circular Std", serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.creativity-activities-spa p {
+    text-align: center;
+    line-height: 25.6px;
+}
+
+.creativity-activities-spa-photo {
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+}
+
+.creativity-activities-spa-photo img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Секція форма */
+
+.section-form {
+    background-image: url(../img/about-location/section-form/bg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-form-boxes {
+    padding: 80px 24px;
+}
+
+.section-form-text-box {
+    margin-top: 30px;
+}
+
+.section-form-box-big-text {
+    color: white;
+    text-align: left;
+    font-family: "Circular Std", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+}
+
+.section-form-box-small-text {
+    color: white;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30.4px;
+}
+
+.section-form-box {
+    background-color: rgba(40, 37, 32, 0.8);
+    padding: 31px 27px;
+}
+
+.section-form-input {
+    margin-bottom: 24px;
+}
+
+.section-form-input input {
+    background-color: rgba(255, 255, 255, 0.24);
+    border: 0;
+    padding: 16px 24px;
+    border-radius: 34px;
+    width: 100%;
+    outline-color: #3b99fc;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.568);
+
+}
+
+.section-form-button {
+    margin-top: 36px;
+    padding: 16px 24px;
+    width: 100%;
+    border: 0;
+    background-color: #f98250;
+    border-radius: 34px;
+}
+
+.section-form-button span {
+    color: white;
+}
+
+/* Media */
+@media (min-width: 750px) {
+    .about-song-box {
+        padding: auto;
+    }
+
+    .empty-column {
+        display: block;
+        padding: 0 15px;
+        width: 45%;
+        height: auto;
+    }
+
+    .about-song-box-desc {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-song-text h2 {
+        font-size: 39px;
+        line-height: 46px;
+    }
+
+    .services-card-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%;
+        margin: 0 10px;
+    }
+
+    .creativity-activities-header p {
+        font-size: 39px;
+        line-height: 46px;
+    }
+
+    .creativity-activities-boxes {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .creativity-activities-box {
+        margin: 0 20px;
+    }
+
+    .creativity-activities-list div {
+        margin-bottom: 5px;
+    }
+
+    .section-form-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-form-box {
+        width: 30%;
+    }
+}
+
+@media (min-width: 980px) {
+    .card {
+        width: 30%;
+    }
+}

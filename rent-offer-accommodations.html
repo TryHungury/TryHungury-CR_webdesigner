@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="X-UA-Compatible">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення Білетів</title>
+    <link rel="shortcut icon" href="img/ava.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/rent-offer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="header-top container">
+            <div>
+                <p>Надеберний Богдан<br>КН-208</p>
+            </div>
+            <div>
+                <a href="index.html"><img src="img/index/logo.png" alt="Logo"></a>
+            </div>
+            <div>
+                <a href="tel:+380979218188" data-action="phone" class="header-numbers">+38 (097) 921 81 88<br></a>
+                <a href="mailto:mukolanadebernuy@gmail.com" data-action="mailto"
+                    class="header-numbers">mukolanadebernuy@gmail.com</a>
+            </div>
+        </div>
+        <nav class="menu container">
+            <a href="about-location.html">Про мої пісні</a>
+            <a href="gallery.html">Галерея моїх фото</a>
+            <a href="rent-offer-accommodations.html">Замовлення Білетів</a>
+            <a href="contact.html">Більше контактої інформації</a>
+        </nav>
+    
+    </header>
+    <!-- Унікальний вміст -->
+    <main>
+        <!-- JS Відлік -->
+        <section>
+            <h1>Замовлення квитків в наявності</h1>
+            <section class="special-price">
+                <div class="special-time">
+                    <price>Білети в наявності!</price>
+                    <div class="timedown">
+                        <div class="container-day">
+                            <div class="day">Time</div>
+                            <day>Днів</day>
+                        </div>
+                        <div class="container-hour">
+                            <div class="hour">Time</div>
+                            <hour>Годин</hour>
+                        </div>
+                        
+                        <div class="container-minute">
+                            <div class="minute">Time</div>
+                            <minute>Хвилин</minute>
+                        </div>
+                        <div class="container-second">
+                            <div class="second">Time</div>
+                                <second>Секунд</second>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- JS Білети -->
+            <div id="products"></div>        
+        </section>
+        <!-- Виберіть найкращий для вас варіант-->
+       <div class="section-form section-form-black-bg">
+            <div class="section-form-boxes">
+                <div class="section-form-text-box">
+                    <p class="section-form-box-big-text">Оберіть найкращий варіант</p>
+                    <p class="section-form-box-small-text">Заповніть форму для резервування</p>
+                </div>
+                <div class="section-form-box">
+                    <div class="section-form-input">
+                        <input type="text" placeholder="Ім'я*">
+                    </div>
+                    <div class="section-form-input">
+                        <input type="text" placeholder="Номер телефону*">
+                    </div>
+                    <div class="section-form-input">
+                        <input type="text" placeholder="Дата замовлення*">
+                    </div>
+                    <div class="section-form-input">
+                        <input type="text" placeholder="Дата білету*">
+                    </div>
+                    <div class="section-form-input">
+                        <input type="text" placeholder="Тип замовлення* (електроний, терміналом)">
+                    </div>
+                    <button class="section-form-button">
+                        <span>Зарезервувати</span>
+                    </button> 
+                </div>
+            </div>
+        </div>              
+        </section>
+    <!-- Підвал -->
+    <footer>
+        <div class="footer-top container">
+            <div>
+                <a href="index.html"><img class="logo" src="img/index/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="menu-footer">
+                <div class="bold-block">
+                    <a href="about-location.html">Про мої пісні</a>
+                    <a href="rental-policies.html">Телефони служби підтримки</a>
+                </div>
+                <div class="normal-block">
+                    <a href="gallery.html">Галерея моїх фото</a>
+                    <a href="contact.html">Більше контактної інформації</a>
+                </div>
+                <a href="rent-offer-accommodations.html">Білети</a>
+            </nav>
+            <div class="follow">
+                <h3>Підписуйтесь на мене</h3>
+                <a href="https://www.facebook.com/profile.php?id=100014395815568" target="_blank"><img
+                        src="img/index/facebook.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com/nadebernij" target="_blank"><img src="img/index/twitter.png"
+                        alt="Twitter icon"></a>
+                <a href="https://www.instagram.com/_bodyanuch_na_/" target="_blank"><img src="img/index/instagram.png"
+                        alt="Instagram icon"></a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© Created by Bohdan Nadebernuy</p>
+            <p>Всі питання можна задати по листу</p>
+        </div>
+    </footer>
+        <script src="js/rent-offer.js"></script>
+    </body>
+</html>
